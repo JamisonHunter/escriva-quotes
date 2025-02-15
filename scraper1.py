@@ -3,7 +3,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup 
 
 def check_page():
-    page_number = 809
+    page_number = 1
 
     folder = "Furrow"
 
