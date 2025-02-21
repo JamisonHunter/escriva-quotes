@@ -7,11 +7,10 @@ document.getElementById("fetch-quote").addEventListener("click", async function(
         return;
     }
 
-    let folder = selectedSources[Math.floor(Math.random() * selectedSources.length)]; // Pick a random folder
+    let folder = selectedSources[Math.floor(Math.random() * selectedSources.length)]; 
     let fileCount = await getFileCount(folder); 
     let randomIndex = Math.floor(Math.random() * fileCount) + 1;
     let fileName = `${folder.toLowerCase()}-${randomIndex}.txt`;
-    console.log(folder.length);
 
     try {
         let response = await fetch(`${folder}/${fileName}`);
@@ -22,7 +21,7 @@ document.getElementById("fetch-quote").addEventListener("click", async function(
 
         document.getElementById("title").innerText = `${folder} #${lines[0] || "???"}`;
         document.getElementById("line-1").innerText = lines[1] || "No content found";
-        document.getElementById("line-2").innerText = lines[2] || ""; // Show second line if available
+        document.getElementById("line-2").innerText = lines[2] || ""; 
 
     } catch (error) {
         alert("Could not fetch quote. Ensure the file exists.");
