@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote Generator</title>
+    <title>Escriva Quotes</title>
 </head>
 <body>
-    <div>
-        <pre id="output">Loading...</pre>
+    <header>
+        <h1>Escriva Quotes</h1>
+        <p>An online resource for the quotations from The Forge, Furrow, and The Way</p>
+    </header>
+    <div id="quote-body">
+        <h2 id="title">Title Not Found</h2>
+        <p id="line-1">Line 1 Not Found</p>
+        <p id="line-2">Line 2 Not Found</p>
     </div>
+    <div id="panel">
+        <label for="furrow">Furrow</label>
+        <input type="checkbox" name="furrow" id="furrow" value="furrow">
+
+        <label for="forge">The Forge</label>
+        <input type="checkbox" name="forge" id="forge" value="forge">
+
+        <label for="way">The Way</label>
+        <input type="checkbox" name="way" id="way" value="way">
+    </div>
+    <footer>
+        <p><a target="_blank" href="https://github.com/JamisonHunter/escriva-quotes">Source Code</a></p>
+    </footer>
 </body>
-<script src="script.js"></script>
 </html>
