@@ -10,6 +10,7 @@ document.getElementById("fetch-quote").addEventListener("click", async function(
     let folder = selectedSources[Math.floor(Math.random() * selectedSources.length)]; 
     let fileCount = await getFileCount(folder); 
     let randomIndex = Math.floor(Math.random() * fileCount) + 1;
+    
     let fileName = `${folder.toLowerCase()}-${randomIndex}.txt`;
 
     try {
@@ -18,6 +19,10 @@ document.getElementById("fetch-quote").addEventListener("click", async function(
 
         let text = await response.text();
         let lines = text.split("\n");
+
+        if (folder === 'Way' || folder === 'Forge') {
+            folder = 'The ' + folder;
+        }
 
         document.getElementById("title").innerText = `${folder} #${lines[0] || "???"}`;
         document.getElementById("line-1").innerText = lines[1] || "No content found";
