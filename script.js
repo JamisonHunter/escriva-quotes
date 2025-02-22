@@ -32,7 +32,7 @@ async function fetchAndDisplayQuote() {
         document.getElementById("line-2").innerText = lines[2] || ""; 
 
     } catch (error) {
-        alert("Could not fetch quote. Ensure the file exists.");
+        console.log("Could not fetch quote. Ensure the file exists.");
     }
 }
 
