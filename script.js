@@ -5,9 +5,8 @@ async function fetchAndDisplayQuote() {
     const sources = ["Furrow", "Forge", "Way"];
     let selectedSources = sources.filter(source => document.getElementById(source.toLowerCase()).checked);
 
-    // If no sources are selected, pick a random one on page load
     if (selectedSources.length === 0) {
-        selectedSources = sources; // Use all sources
+        selectedSources = sources; 
     }
 
     let folder = selectedSources[Math.floor(Math.random() * selectedSources.length)];
