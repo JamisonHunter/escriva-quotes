@@ -1,6 +1,6 @@
 import time
 from selenium import webdriver
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 
 def check_page():
     page_number = 1
