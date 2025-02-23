@@ -1,11 +1,16 @@
+:root {
+    --primary-color: #FAF9F6;
+    --text-collor: black;
+}
+
 body {
-    background-color: #FAF9F6;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--text-collor);
 }
 
 #quote-body {
     height: 320px;
     width: 800px;
-    border: 2px solid black;
+    border: 2px solid var(--text-collor);
     padding: 20px;
 }
