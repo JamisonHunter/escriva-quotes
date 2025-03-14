@@ -40,7 +40,7 @@ body {
 .switch-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Ensures spacing between switch and label */
+    gap: 10px; 
 }
 
 .switch-input {
