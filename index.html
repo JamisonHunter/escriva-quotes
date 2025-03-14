@@ -7,30 +7,42 @@
     <title>Escriva Quotes</title>
 </head>
 <body>
-    <header>
-        <h1>Escriva Quotes</h1>
-        <p>An online resource for the quotations from The Forge, Furrow, and The Way</p>
-    </header>
-    <div id="quote-body">
-        <h2 id="title">Title Not Found</h2>
-        <p id="line-1">Line 1 Not Found</p>
-        <p id="line-2">Line 2 Not Found</p>
+    <div id="page">
+        <header>
+            <h1>Escriva Quotes</h1>
+            <p>An online resource for the quotations from The Forge, Furrow, and The Way</p>
+        </header>
+        <div id="quote-body">
+            <h2 id="title">Title Not Found</h2>
+            <p id="line-1">Line 1 Not Found</p>
+            <p id="line-2">Line 2 Not Found</p>
+        </div>
+        <div id="panel">
+            <button id="fetch-quote">Get Quote</button>
+            
+            <div class="switch-container">
+                <input type="checkbox" name="furrow" id="furrow" class="switch-input">
+                <label for="furrow" class="switch-label"></label>
+                <span class="switch-text">Furrow</span>
+            </div>
+        
+            <div class="switch-container">
+                <input type="checkbox" name="forge" id="forge" class="switch-input">
+                <label for="forge" class="switch-label"></label>
+                <span class="switch-text">The Forge</span>
+            </div>
+        
+            <div class="switch-container">
+                <input type="checkbox" name="way" id="way" class="switch-input">
+                <label for="way" class="switch-label"></label>
+                <span class="switch-text">The Way</span>
+            </div>
+        </div>
+        
+        <footer>
+            <p><a target="_blank" href="https://github.com/JamisonHunter/escriva-quotes">Source Code</a></p>
+        </footer>
     </div>
-    <div id="panel">
-        <label for="furrow">Furrow</label>
-        <input type="checkbox" name="furrow" id="furrow" value="Furrow">
-
-        <label for="forge">The Forge</label>
-        <input type="checkbox" name="forge" id="forge" value="Forge">
-
-        <label for="way">The Way</label>
-        <input type="checkbox" name="way" id="way" value="Way">
-
-        <button id="fetch-quote">Get Quote</button>
-    </div>
-    <footer>
-        <p><a target="_blank" href="https://github.com/JamisonHunter/escriva-quotes">Source Code</a></p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
