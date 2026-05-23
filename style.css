@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #FAF9F6;
-    --text-color: black;
-    --switch-bg: #ccc;
+    --primary-color: #181818;
+    --text-color: linen;
+    --switch-bg: #303030;
     --switch-active-bg: #00274D; 
 }
 
@@ -15,18 +15,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+    padding-bottom: 12px;
+}
+
 #page {
     width: 80%;
     max-width: 800px;
     margin: 20px auto 40px;
     padding: 20px;
-    border: 1px solid var(--text-color);
+    border: 2px solid var(--switch-active-bg);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 #quote-body {
     min-height: 300px;
-    border: 1px solid var(--text-color);
+    border: 2px solid var(--switch-active-bg);
     padding: 20px;
 }
 
@@ -84,6 +88,7 @@ body {
 }
 
 button#fetch-quote {
+    width: 200px;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -105,11 +110,11 @@ footer {
 
 a {
     text-decoration: none;
-    color: var(--switch-active-bg)
+    color: darkblue;
 }
 
 a:hover {
-    color: darkblue;
+    color: blue;
 }
 
 @media only screen and (max-width: 800px) {
